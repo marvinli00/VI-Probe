@@ -1,0 +1,18 @@
+line-length = 100
+target-version = "py39"
+src = ["."]
+
+[lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[lint.isort]
+known-first-party = ["core", "illusions", "sweep"]
+
+[lint.per-file-ignores]
+# Faithful ports of the research generators: style kept as-published
+"illusions/**" = ["F841", "E741", "E722", "E731", "W291", "W293"]
+"core/draw/**" = ["F841", "E741", "E722", "E731", "W291", "W293"]
+# sys.path bootstrap precedes imports
+"examples/gallery.py" = ["E402"]
+"examples/quickstart.ipynb" = ["E402"]

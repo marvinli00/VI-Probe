@@ -1,0 +1,8 @@
+# Environment used to render the published VI-Probe dataset (bit-exact reproduction).
+# Python 3.11.3 (macOS, conda). PNG bytes depend on the Pillow version; raw-array
+# hashes depend only on numpy + the generator code.
+numpy==1.24.4
+Pillow==9.4.0
+matplotlib==3.7.1
+pandas==1.5.3
+openpyxl==3.0.10

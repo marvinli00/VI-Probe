@@ -1,0 +1,140 @@
+# Frozen as-run configuration extracted verbatim from the original generation notebooks.
+# Values (including any typos in prompts) match the published VI-Probe dataset; output
+# folders use the released case numbering (1-27). Byte-exact source of the released
+# color images. Do not edit.
+
+category: color
+param_mode: hsb_shift
+scale_factors:
+  start: 0.5
+  stop: 1.5
+  num: 50
+  endpoint: false
+strengths:
+  start: 0.5
+  stop: 1.5
+  num: 51
+  exclude:
+  - 1.0
+is_guide_first: false
+ctor_params:
+  CornswweetIllusion:
+    DEFAULT_GRAY: 0.5
+  SimultaneousContrastIllusion:
+    DEFAULT_COLOR:
+    - 0.5
+    - 0.5
+    - 0.5
+  MunkerWhiteIllusion:
+    DEFAULT_COLOR:
+    - 0.65
+    - 0.65
+    - 0.35
+  MachBandIllusion:
+    num_stripes: 16
+  MachBandIllusion_Case2:
+    num_stripes: 16
+  ChubbIllusion:
+    base_saturation: 0.2
+    circle_alpha: 1
+  CornswweetIllusionCase1:
+    DEFAULT_GRAY: 0.5
+    strength_mode: lightness
+hsb_ctor_params:
+  CornswweetIllusion:
+    GRADIENT_LEFT_COLOR:
+    - 0.0
+    - 0.43
+    - 0.2
+    GRADIENT_RIGHT_COLOR:
+    - 0.0
+    - 0.43
+    - 0.95
+  SimultaneousContrastIllusion:
+    LEFT_BG_COLOR:
+    - 0.0
+    - 0.43
+    - 0.26
+    RIGHT_BG_COLOR:
+    - 0.0
+    - 0.43
+    - 1.0
+  MunkerWhiteIllusion:
+    BLACK_STRIPE_COLOR:
+    - 0.0
+    - 0.43
+    - 0.26
+    WHITE_STRIPE_COLOR:
+    - 0.0
+    - 0.43
+    - 1.0
+  MachBandIllusion:
+    start_color:
+    - 0.0
+    - 0.43
+    - 0.26
+    end_color:
+    - 0.0
+    - 0.43
+    - 1.0
+  MachBandIllusion_Case2:
+    start_color:
+    - 0.0
+    - 0.43
+    - 0.26
+    end_color:
+    - 0.0
+    - 0.43
+    - 1.0
+  ChubbIllusion:
+    hue:
+    - 0
+    - 0.5
+    - 0.5
+  CornswweetIllusionCase1:
+    left_base_color:
+    - 0.5
+    - 0.5
+    - 0.5
+    right_base_color:
+    - 0.5
+    - 0.5
+    - 0.5
+output_folders:
+  CornswweetIllusion: 12_CornswweetIllusion
+  SimultaneousContrastIllusion: 13_SimultaneousContrastIllusion
+  MunkerWhiteIllusion: 14_MunkerWhiteIllusion
+  MachBandIllusion: 15_MachBandIllusion
+  MachBandIllusion_Case2: 16_MachBandIllusion_Case2
+  ChubbIllusion: 17_ChubbIllusion
+  CornswweetIllusionCase1: 18_CornswweetIllusionCase1
+questions_non_control:
+  CornswweetIllusion: "Are the two circles of the same color?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+  SimultaneousContrastIllusion: "Are the two small squares of the same color?\nAnswer Instructions:\n\
+    1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+  MunkerWhiteIllusion: "Are the two rectangle the same color?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+  MachBandIllusion: "Is there an boundary in between every adjecent regions?\nAnswer Instructions:\n1.\
+    \ Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+  MachBandIllusion_Case2: "Is there an boundary in between every adjecent regions?\nAnswer Instructions:\n\
+    1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+  ChubbIllusion: "Are the two circles of the same color?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+  CornswweetIllusionCase1: "Are the two vertical bands of the same color?\nAnswer Instructions:\n1. Write\
+    \ your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the\
+    \ final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n\
+    \   - Do not write anything else inside <answer>."
+questions_control: {}

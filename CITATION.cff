@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code or the VI-Probe dataset, please cite the paper below."
+title: "VI-Probe Generator"
+authors:
+  - name: "The VI-Probe Authors"
+repository-code: "https://github.com/marvinli00/VI-Probe"
+url: "https://huggingface.co/datasets/xxsun/VI-Probe"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Do VLMs Perceive or Recall? Probing Visual Perception vs. Memory with Classic Visual Illusions"
+  authors:
+    - family-names: Sun
+      given-names: Xiaoxiao
+    - family-names: Li
+      given-names: Mingyang
+    - family-names: Yuan
+      given-names: Kun
+    - family-names: Sun
+      given-names: Min Woo
+    - family-names: Endo
+      given-names: Mark
+    - family-names: Wu
+      given-names: Shengguang
+    - family-names: Li
+      given-names: Changlin
+    - family-names: Zhang
+      given-names: Yuhui
+    - family-names: Wang
+      given-names: Zeyu
+    - family-names: Yeung-Levy
+      given-names: Serena
+  collection-title: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+  year: 2026
+  start: 25861
+  end: 25870

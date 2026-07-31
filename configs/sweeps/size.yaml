@@ -1,0 +1,108 @@
+# Frozen as-run configuration extracted verbatim from the original generation notebooks.
+# Values (including any typos in prompts) match the published VI-Probe dataset; output
+# folders use the released case numbering (1-27). Do not edit.
+
+category: size
+param_mode: scaled
+scale_factors:
+  start: 0.5
+  stop: 1.5
+  num: 51
+  endpoint: true
+strengths:
+  start: 0.5
+  stop: 1.5
+  num: 51
+  exclude:
+  - 1.0
+is_guide_first: false
+ctor_params:
+  MullerLyerIllusion:
+    DEFAULT_LINE_LENGTH: 200
+  CircleMullerLyerIllusion:
+    DEFAULT_LINE_LENGTH: 200
+  PonzoIllusion:
+    DEFAULT_LINE_LENGTH: 80
+  PonzoTrapezoidIllusion:
+    DEFAULT_LINE_LENGTH: 80
+  EbbinghausIllusion:
+    DEFAULT_CENTER_RADIUS: 20
+  EbbinghausIllusionRectangular:
+    DEFAULT_CENTER_RADIUS: 20
+  DelboeufIllusion:
+    DEFAULT_INNER_RADIUS: 30
+  OppelKundtIllusion:
+    DEFAULT_SEGMENT_LENGTH: 100
+  IrradiationIllusion:
+    DEFAULT_RECT_WIDTH: 100
+    DEFAULT_RECT_HEIGHT: 100
+  IrradiationPentagonIllusion:
+    DEFAULT_SMALL_RADIUS: 40
+  CirclePonzoIllusion:
+    DEFAULT_CIRCLE_RADIUS: 40
+output_folders:
+  MullerLyerIllusion: 1_MullerLyerIllusion
+  CircleMullerLyerIllusion: 2_CircleMullerLyerIllusion
+  PonzoIllusion: 3_PonzoIllusion
+  PonzoTrapezoidIllusion: 4_PonzoTrapezoidIllusion
+  EbbinghausIllusion: 5_EbbinghausIllusion
+  EbbinghausIllusionRectangular: 6_EbbinghausIllusionRectangular
+  DelboeufIllusion: 7_DelboeufIllusion
+  OppelKundtIllusion: 8_OppelKundtIllusion
+  IrradiationIllusion: 9_IrradiationIllusion
+  IrradiationPentagonIllusion: 10_IrradiationPentagonIllusion
+  CirclePonzoIllusion: 11_CirclePonzoIllusion
+questions_non_control:
+  MullerLyerIllusion: "Are the two black lines of equal length?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+  CircleMullerLyerIllusion: "Are the two black lines of equal length?\nAnswer Instructions:\n1. Write\
+    \ your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the\
+    \ final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n\
+    \   - Do not write anything else inside <answer>."
+  PonzoIllusion: "Are the two horizontal black lines of equal length?\nAnswer Instructions:\n1. Write\
+    \ your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the\
+    \ final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n\
+    \   - Do not write anything else inside <answer>."
+  PonzoTrapezoidIllusion: "Are the two horizontal black lines of equal length?\nAnswer Instructions:\n\
+    1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+  EbbinghausIllusion: "Are the two orange circles the same size?\nAnswer Instructions:\n1. Write your\
+    \ reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final\
+    \ numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   -\
+    \ Do not write anything else inside <answer>."
+  EbbinghausIllusionRectangular: "Are the two orange circles the same size?\nAnswer Instructions:\n1.\
+    \ Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+  DelboeufIllusion: "Are the two solid circles the same size?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+  OppelKundtIllusion: "Are the distances between the vertical markers labeled A–B and B–C equal?\nAnswer\
+    \ Instructions:\n1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language\
+    \ explanation.\n2. Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n\
+    \   - Use \"0\" if no.\n   - Do not write anything else inside <answer>."
+  IrradiationIllusion: "Are the left white square and the right black square equal in size?\nAnswer Instructions:\n\
+    1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+  IrradiationPentagonIllusion: "Are the left white pentagon and the right black pentagon equal in size?\n\
+    Answer Instructions:\n1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language\
+    \ explanation.\n2. Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n\
+    \   - Use \"0\" if no.\n   - Do not write anything else inside <answer>."
+  CirclePonzoIllusion: "Are the two circles the same size?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+questions_control:
+  IrradiationIllusion: "Are the left black square and the right black square equal in size?\nAnswer Instructions:\n\
+    1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+  IrradiationPentagonIllusion: "Are the left black pentagon and the right black pentagon equal in size?\n\
+    Answer Instructions:\n1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language\
+    \ explanation.\n2. Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n\
+    \   - Use \"0\" if no.\n   - Do not write anything else inside <answer>."

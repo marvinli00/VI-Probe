@@ -1,0 +1,44 @@
+# Generated images / sweep outputs
+output/
+output_*/
+gallery/
+*.png
+!docs/**/*.png
+!examples/assets/*.png
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.log
+*.bak
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.claude/
+.vscode/
+.idea/
+
+# Data artifacts
+*.zip
+*.xlsx
+*.parquet

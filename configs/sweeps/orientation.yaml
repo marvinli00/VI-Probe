@@ -1,0 +1,296 @@
+# Frozen as-run configuration extracted verbatim from the original generation notebooks.
+# Values (including any typos in prompts) match the published VI-Probe dataset. Do not edit.
+
+category: orientation
+param_mode: table
+scale_factors:
+  start: 0.5
+  stop: 1.5
+  num: 11
+  endpoint: true
+strengths:
+  start: 0.5
+  stop: 1.5
+  num: 11
+  exclude:
+  - 1.0
+is_guide_first_by_class:
+  HeringIllusion: true
+  HeringIllusionVertical: true
+  ZollnerIllusion: true
+  ZollnerIllusionVertical: true
+  TwistedCordIllusion: false
+  TwistedCordIllusionLight: false
+  PoggendorffIllusion: false
+  PoggendorffHorizontalIllusion: false
+  EhrensteinIllusion: false
+ctor_params:
+  HeringIllusion: {}
+  HeringIllusionVertical: {}
+  ZollnerIllusion:
+    NUM_HASH_MARKS_PER_LINE: 10
+  ZollnerIllusionVertical:
+    NUM_HASH_MARKS_PER_LINE: 10
+  TwistedCordIllusion:
+    STRIPE_WIDTH: 10
+  TwistedCordIllusionLight:
+    STRIPE_WIDTH: 10
+  PoggendorffIllusion: {}
+  PoggendorffHorizontalIllusion: {}
+  EhrensteinIllusion: {}
+table_ctor_params:
+  HeringIllusion:
+    DEFAULT_NUM_RADIAL_LINES:
+      '0.50': 6
+      '0.55': 8
+      '0.60': 10
+      '0.65': 12
+      '0.70': 14
+      '0.75': 16
+      '0.80': 18
+      '0.85': 20
+      '0.90': 22
+      '0.95': 24
+      '1.00': 26
+      '1.05': 28
+      '1.10': 30
+      '1.15': 32
+      '1.20': 34
+      '1.25': 36
+      '1.30': 38
+      '1.35': 40
+      '1.40': 42
+      '1.45': 44
+      '1.50': 46
+  HeringIllusionVertical:
+    DEFAULT_NUM_RADIAL_LINES:
+      '0.50': 6
+      '0.55': 8
+      '0.60': 10
+      '0.65': 12
+      '0.70': 14
+      '0.75': 16
+      '0.80': 18
+      '0.85': 20
+      '0.90': 22
+      '0.95': 24
+      '1.00': 26
+      '1.05': 28
+      '1.10': 30
+      '1.15': 32
+      '1.20': 34
+      '1.25': 36
+      '1.30': 38
+      '1.35': 40
+      '1.40': 42
+      '1.45': 44
+      '1.50': 46
+  ZollnerIllusion:
+    NUM_PARALLEL_LINES:
+      '0.50': 5
+      '0.55': 6
+      '0.60': 7
+      '0.65': 8
+      '0.70': 9
+      '0.75': 10
+      '0.80': 11
+      '0.85': 12
+      '0.90': 13
+      '0.95': 14
+      '1.00': 15
+      '1.05': 16
+      '1.10': 17
+      '1.15': 18
+      '1.20': 19
+      '1.25': 20
+      '1.30': 21
+      '1.35': 22
+      '1.40': 23
+      '1.45': 24
+      '1.50': 25
+  ZollnerIllusionVertical:
+    NUM_PARALLEL_LINES:
+      '0.50': 5
+      '0.55': 6
+      '0.60': 7
+      '0.65': 8
+      '0.70': 9
+      '0.75': 10
+      '0.80': 11
+      '0.85': 12
+      '0.90': 13
+      '0.95': 14
+      '1.00': 15
+      '1.05': 16
+      '1.10': 17
+      '1.15': 18
+      '1.20': 19
+      '1.25': 20
+      '1.30': 21
+      '1.35': 22
+      '1.40': 23
+      '1.45': 24
+      '1.50': 25
+  TwistedCordIllusion:
+    CORD_WIDTH:
+      '0.50': 15
+      '0.55': 16
+      '0.60': 17
+      '0.65': 18
+      '0.70': 19
+      '0.75': 20
+      '0.80': 21
+      '0.85': 22
+      '0.90': 23
+      '0.95': 24
+      '1.00': 25
+      '1.05': 26
+      '1.10': 27
+      '1.15': 28
+      '1.20': 29
+      '1.25': 30
+      '1.30': 31
+      '1.35': 32
+      '1.40': 33
+      '1.45': 34
+      '1.50': 35
+  TwistedCordIllusionLight:
+    CORD_WIDTH:
+      '0.50': 15
+      '0.55': 16
+      '0.60': 17
+      '0.65': 18
+      '0.70': 19
+      '0.75': 20
+      '0.80': 21
+      '0.85': 22
+      '0.90': 23
+      '0.95': 24
+      '1.00': 25
+      '1.05': 26
+      '1.10': 27
+      '1.15': 28
+      '1.20': 29
+      '1.25': 30
+      '1.30': 31
+      '1.35': 32
+      '1.40': 33
+      '1.45': 34
+      '1.50': 35
+  PoggendorffIllusion:
+    vertical_offset:
+      '0.50': -50
+      '0.55': -44
+      '0.60': -39
+      '0.65': -34
+      '0.70': -29
+      '0.75': -24
+      '0.80': -19
+      '0.85': -14
+      '0.90': -9
+      '0.95': -4
+      '1.00': 0
+      '1.05': 5
+      '1.10': 10
+      '1.15': 15
+      '1.20': 20
+      '1.25': 25
+      '1.30': 30
+      '1.35': 35
+      '1.40': 40
+      '1.45': 45
+      '1.50': 50
+  PoggendorffHorizontalIllusion:
+    horizontal_offset:
+      '0.50': -50
+      '0.55': -44
+      '0.60': -39
+      '0.65': -34
+      '0.70': -29
+      '0.75': -24
+      '0.80': -19
+      '0.85': -14
+      '0.90': -9
+      '0.95': -4
+      '1.00': 0
+      '1.05': 5
+      '1.10': 10
+      '1.15': 15
+      '1.20': 20
+      '1.25': 25
+      '1.30': 30
+      '1.35': 35
+      '1.40': 40
+      '1.45': 45
+      '1.50': 50
+  EhrensteinIllusion:
+    NUM_LINES:
+      '0.50': 10
+      '0.55': 11
+      '0.60': 12
+      '0.65': 13
+      '0.70': 14
+      '0.75': 15
+      '0.80': 16
+      '0.85': 17
+      '0.90': 18
+      '0.95': 19
+      '1.00': 20
+      '1.05': 21
+      '1.10': 22
+      '1.15': 23
+      '1.20': 24
+      '1.25': 25
+      '1.30': 26
+      '1.35': 27
+      '1.40': 28
+      '1.45': 29
+      '1.50': 30
+output_folders:
+  HeringIllusion: 19_HeringIllusion
+  HeringIllusionVertical: 20_HeringIllusionVertical
+  ZollnerIllusion: 21_ZollnerIllusion
+  ZollnerIllusionVertical: 22_ZollnerIllusionVertical
+  TwistedCordIllusion: 23_TwistedCordIllusion
+  TwistedCordIllusionLight: 24_TwistedCordIllusionLight
+  PoggendorffIllusion: 25_PoggendorffIllusion
+  PoggendorffHorizontalIllusion: 26_PoggendorffHorizontalIllusion
+  EhrensteinIllusion: 27_EhrensteinIllusion
+questions_non_control:
+  HeringIllusion: "Are the two horizontal lines straight?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+  HeringIllusionVertical: "Are the two vertical lines straight?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+  ZollnerIllusion: "Are the those red lines straight?\nAnswer Instructions:\n1. Write your reasoning inside\
+    \ <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric answer\
+    \ inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not write anything\
+    \ else inside <answer>."
+  ZollnerIllusionVertical: "Are the those red lines straight?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+  TwistedCordIllusion: "Are those vertical columns parallel?\nAnswer Instructions:\n1. Write your reasoning\
+    \ inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final numeric\
+    \ answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   - Do not\
+    \ write anything else inside <answer>."
+  TwistedCordIllusionLight: "Are those vertical columns parallel?\nAnswer Instructions:\n1. Write your\
+    \ reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2. Give the final\
+    \ numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"0\" if no.\n   -\
+    \ Do not write anything else inside <answer>."
+  PoggendorffIllusion: "Are the red and black solid diagonal lines aligned?\nAnswer Instructions:\n1.\
+    \ Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+  PoggendorffHorizontalIllusion: "Are the red and black solid diagonal lines aligned?\nAnswer Instructions:\n\
+    1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+  EhrensteinIllusion: "Do the squares on the left and right have straight edges?\nAnswer Instructions:\n\
+    1. Write your reasoning inside <reasons>...</reasons>.\n   - Use natural language explanation.\n2.\
+    \ Give the final numeric answer inside <answer>...</answer>.\n   - Use \"1\" if yes.\n   - Use \"\
+    0\" if no.\n   - Do not write anything else inside <answer>."
+questions_control: {}

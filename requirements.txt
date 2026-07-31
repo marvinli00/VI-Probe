@@ -1,0 +1,11 @@
+# Rendering
+numpy>=1.20
+pillow>=9.0
+matplotlib>=3.3
+# Sweep metadata (python main.py --sweep)
+pyyaml>=6.0
+pandas>=1.5
+openpyxl>=3.0
+# Optional: opencv-python-headless>=4.5  (only the two twisted-cord illusions)
+# Dev: pytest>=7.0, ruff>=0.4
+# For bit-exact reproduction of the published images use requirements-lock.txt.
